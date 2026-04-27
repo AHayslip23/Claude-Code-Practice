@@ -1,0 +1,22 @@
+{
+  "pages": {
+    "/page": [
+      "static/chunks/800e5_next_dist_2611a2d7._.js",
+      "static/chunks/13466_Desktop_Claude_Claude Code in Action_uigen_src_app_favicon_ico_mjs_c9560c30._.js",
+      "static/chunks/[root-of-the-server]__b7b8506b._.css",
+      "static/chunks/OneDrive_Desktop_Claude_Claude Code in Action_uigen_src_app_layout_tsx_31e6dd42._.js",
+      "static/chunks/800e5_next_dist_client_components_builtin_global-error_49a4f19b.js",
+      "static/chunks/OneDrive_Desktop_Claude_Claude Code in Action_uigen_b1388171._.js",
+      "static/chunks/OneDrive_Desktop_Claude_Claude Code in Action_uigen_src_app_page_tsx_49a4f19b._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_8a224d22._.js",
+      "static/chunks/800e5_next_dist_compiled_react-dom_9f8b5f0f._.js",
+      "static/chunks/800e5_next_dist_compiled_next-devtools_index_633b9d2f.js",
+      "static/chunks/800e5_next_dist_compiled_152b1d3b._.js",
+      "static/chunks/800e5_next_dist_client_e742a3c5._.js",
+      "static/chunks/800e5_next_dist_a4be0320._.js",
+      "static/chunks/800e5_@swc_helpers_cjs_09083732._.js",
+      "static/chunks/OneDrive_Desktop_Claude_Claude Code in Action_uigen_a0ff3932._.js",
+      "static/chunks/turbopack-OneDrive_Desktop_Claude_Claude Code in Action_uigen_2653d724._.js"
+    ]
+  }
+}

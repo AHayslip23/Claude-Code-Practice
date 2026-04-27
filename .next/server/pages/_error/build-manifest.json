@@ -1,0 +1,24 @@
+{
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "pages": {
+    "/_error": [
+      "static/chunks/800e5_next_dist_compiled_next-devtools_index_597f77c0.js",
+      "static/chunks/800e5_next_dist_compiled_0b7cc586._.js",
+      "static/chunks/800e5_next_dist_shared_lib_63e07e86._.js",
+      "static/chunks/800e5_next_dist_client_b812c675._.js",
+      "static/chunks/800e5_next_dist_05e6bb6f._.js",
+      "static/chunks/800e5_next_error_993d4c4d.js",
+      "static/chunks/[next]_entry_page-loader_ts_ea375c51._.js",
+      "static/chunks/800e5_react-dom_9309bdaa._.js",
+      "static/chunks/800e5_9439a8d4._.js",
+      "static/chunks/[root-of-the-server]__184f0e2d._.js",
+      "static/chunks/OneDrive_Desktop_Claude_Claude Code in Action_uigen_pages__error_2da965e7._.js",
+      "static/chunks/9f58e_Desktop_Claude_Claude Code in Action_uigen_pages__error_c10b8684._.js"
+    ]
+  },
+  "ampFirstPages": []
+}

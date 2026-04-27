@@ -1,9 +1,58 @@
 {
-  "permissions": {
-    "allow": [
-      "Bash(node -e \"const ai = require\\('ai'\\); const r = ai.streamText; console.log\\(typeof r\\)\")",
-      "Bash(node -e ' *)",
-      "Bash(node -e \"const ai = require\\('ai'\\); console.log\\(Object.keys\\(ai\\).filter\\(k => k.toLowerCase\\(\\).includes\\('convert'\\) || k.toLowerCase\\(\\).includes\\('prune'\\)\\)\\)\")"
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Read|Grep",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ./hooks/read_hook.js"
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node C:\\Users\\alexh\\OneDrive\\Desktop\\Claude\\Claude Code in Action\\uigen/hooks/query_hook.js",
+            "timeout": 300
+          }
+        ]
+      },
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq . > pre-log.json"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_response.filePath // .tool_input.file_path // empty' | xargs -I {} npx --yes prettier --write {} 2>/dev/null || true"
+          },
+          {
+            "type": "command",
+            "command": "node C:\\Users\\alexh\\OneDrive\\Desktop\\Claude\\Claude Code in Action\\uigen/hooks/tsc.js"
+          }
+        ]
+      },
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq . > post-log.json"
+          }
+        ]
+      }
     ]
   }
 }
