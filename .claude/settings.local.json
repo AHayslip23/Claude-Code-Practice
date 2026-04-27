@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"const ai = require\\('ai'\\); const r = ai.streamText; console.log\\(typeof r\\)\")",
+      "Bash(node -e ' *)",
+      "Bash(node -e \"const ai = require\\('ai'\\); console.log\\(Object.keys\\(ai\\).filter\\(k => k.toLowerCase\\(\\).includes\\('convert'\\) || k.toLowerCase\\(\\).includes\\('prune'\\)\\)\\)\")"
+    ]
+  }
+}
